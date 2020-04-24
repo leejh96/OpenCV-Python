@@ -1,20 +1,6 @@
 import cv2
 import numpy as np
 font = cv2.FONT_ITALIC
-"""
-count = 0
-
-def timer_f(count):#타이머
-    count = count + 1
-    print(count)
-    timer = th.Timer(1,timer_f, args=[count])
-    timer.start()
-
-    if count == 3:
-        print('감사합니다.')
-        timer.cancel()
-"""
-
 
 def faceDetect():
     eye_detect = True
