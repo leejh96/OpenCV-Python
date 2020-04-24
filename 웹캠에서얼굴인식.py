@@ -42,7 +42,7 @@ def faceDetect():
                     cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
 
         cv2.imshow("frame", frame)
-        key = cv2.waitKey(30)#바로 꺼지려면 지워야함
+        cv2.waitKey(30)#바로 꺼지려면 지워야함
 
         if np.all(faces != 0) and np.all(eyes != 0):
             cv2.imwrite('data.jpg', frame)
