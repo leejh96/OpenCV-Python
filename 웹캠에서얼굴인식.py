@@ -4,8 +4,8 @@ font = cv2.FONT_ITALIC
 
 def faceDetect():
     eye_detect = True
-    faceCascade = cv2.CascadeClassifier(r"D:\OpenCV\FaceDetect-master\haarcascade_frontalface_default.xml")  # 얼굴 찾기 파일
-    eyeCascade = cv2.CascadeClassifier(r"D:\OpenCV\FaceDetect-master\haarcascade_eye.xml")  # 눈 찾기 파일
+    faceCascade = cv2.CascadeClassifier(r"D:/OpenCV/FaceDetect-master/haarcascade_frontalface_default.xml")  # 얼굴 찾기 파일
+    eyeCascade = cv2.CascadeClassifier(r"D:/OpenCV/FaceDetect-master/haarcascade_eye.xml")  # 눈 찾기 파일
 
     try:
         cap = cv2.VideoCapture(0)  # 0번 웹캠, 1번 USB 카메라
