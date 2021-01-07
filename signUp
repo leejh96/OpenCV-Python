@@ -1,3 +1,16 @@
+import face_recognition
+import cv2
+import numpy as np
+import pandas as pd
+import os
+import uuid
+
+try:
+    cap = cv2.VideoCapture(0) # 0번 웹캠, 1번 USB 카메라
+    flag = False
+except:
+    print("camera loading error")
+    
 def signUp():
     age_list = ['(0, 2)', '(4, 6)', '(8, 12)', '(15, 20)', '(25, 32)', '(38, 43)', '(48, 53)', '(60, 100)']
     
